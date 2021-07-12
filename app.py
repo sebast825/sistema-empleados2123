@@ -4,7 +4,7 @@ from flask import render_template
 from flaskext.mysql import MySQL
 
 app= Flask(__name__)
-
+#asdasdasdasdasfsdf
 mysql= MySQL()
 app.config['MYSQL_DATABASE_HOST']='localhost'
 app.config['MYSQL_DATABASE_USER']='root'
