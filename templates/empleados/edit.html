@@ -1,0 +1,23 @@
+{% for empleado in empleados %}
+
+<form method="post" action="/update" enctype="multipart/form-data">
+    Id:
+    <input type="text" name="txtId" id="txtId" value="{{empleado[0]}} ">
+    Nombre: 
+    <input type="text" name="txtNombre" id="txtNombre" value="{{empleado[1]}}" >
+    <br>
+    Correo:
+    <input type="text" name="txtCorreo" id="txtCorreo" value="{{empleado[2]}} ">
+    <br>
+    Foto: {{empleado[0]}} 
+    <input type="file" name="txtFoto" id="txtFoto">
+    <br>
+    <br>
+    <input type="submit" value="Agregar"name="" id="">
+</form>
+{{empleado[0]}}
+{{empleado[1]}}
+{{empleado[2]}}
+{{empleado[3]}}
+
+{% endfor %}
